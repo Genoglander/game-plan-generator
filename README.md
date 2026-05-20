@@ -6,19 +6,6 @@
 
 ---
 
-## ✨ 功能 / Features / 機能
-
-| 中文 | English | 日本語 |
-|------|---------|--------|
-| AI 生成完整游戏企划书 | AI-generated full game design doc | AI による完全なゲーム企画書生成 |
-| 任务清单（优先级 + 预估工时）| Task list with priority & hour estimates | 優先度と工数付きタスクリスト |
-| 技术难点分析与解决方案 | Technical challenge analysis & solutions | 技術的課題の分析と解決策 |
-| 七天开发计划 | 7-day development plan | 7日間の開発計画 |
-| 中 / 日 / EN 界面与内容语言切换 | Switch UI & AI output language: ZH / JA / EN | UI・AI出力言語の切り替え（中/日/英）|
-| 导出 Markdown / PNG | Export as Markdown or PNG | Markdown・PNG エクスポート |
-
----
-
 ## 🚀 快速开始 / Quick Start / クイックスタート
 
 **需要 / Required:** 
@@ -57,6 +44,19 @@ pnpm run dev
 
 ---
 
+## ✨ 功能 / Features / 機能
+
+| 中文 | English | 日本語 |
+|------|---------|--------|
+| AI 生成完整游戏企划书 | AI-generated full game design doc | AI による完全なゲーム企画書生成 |
+| 任务清单（优先级 + 预估工时）| Task list with priority & hour estimates | 優先度と工数付きタスクリスト |
+| 技术难点分析与解决方案 | Technical challenge analysis & solutions | 技術的課題の分析と解決策 |
+| 七天开发计划 | 7-day development plan | 7日間の開発計画 |
+| 中 / 日 / EN 界面与内容语言切换 | Switch UI & AI output language: ZH / JA / EN | UI・AI出力言語の切り替え（中/日/英）|
+| 导出 Markdown / PNG | Export as Markdown or PNG | Markdown・PNG エクスポート |
+
+---
+
 ## 🛠 技术栈 / Tech Stack / 技術スタック
 
 - **Frontend:** React + Vite + TypeScript + Tailwind CSS + shadcn/ui
@@ -83,4 +83,4 @@ pnpm run dev
 ---
 
 ## 📄 License
-MIT
+ MIT
