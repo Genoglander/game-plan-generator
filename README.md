@@ -21,66 +21,56 @@
 
 ## 🚀 快速开始 / Quick Start / クイックスタート
 
-### 环境要求 / Prerequisites / 前提条件
+**需要 / Required:** Node.js 18+、pnpm、OpenAI API Key
 
-- Node.js 18+
-- pnpm 8+
-- OpenAI API Key
-
-### 安装 / Install / インストール
+### 1. 克隆并安装 / Clone & Install
 
 ```bash
-# 克隆仓库 / Clone the repo / リポジトリをクローン
-git clone https://github.com/<your-username>/game-plan-generator.git
+git clone https://github.com/Genoglander/game-plan-generator.git
 cd game-plan-generator
-
-# 安装依赖 / Install dependencies / 依存関係をインストール
 pnpm install
 ```
 
-### 配置环境变量 / Environment Variables / 環境変数の設定
+### 2. 配置 API Key / Set up API Key
 
-在项目根目录创建 `.env` 文件：  
-Create a `.env` file in the project root:  
-プロジェクトルートに `.env` ファイルを作成:
+在项目根目录新建 `.env` 文件，填入你的 OpenAI Key：
 
 ```env
-OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-### 启动 / Run / 起動
+### 3. 启动 / Start
+
+分别在两个终端运行 / Run in two separate terminals:
 
 ```bash
-# 启动 API 服务器 / Start API server / API サーバーを起動
+# 终端 1 — 后端 API
 pnpm --filter @workspace/api-server run dev
 
-# 启动前端 / Start frontend / フロントエンドを起動
+# 终端 2 — 前端
 pnpm --filter @workspace/game-planner run dev
 ```
 
-前端默认运行在 `http://localhost:5173`，API 服务器运行在 `http://localhost:3000`。  
-Frontend runs at `http://localhost:5173`, API server at `http://localhost:3000`.  
-フロントエンドは `http://localhost:5173`、API サーバーは `http://localhost:3000` で起動します。
+浏览器打开 → **http://localhost:5173**
 
 ---
 
 ## 🛠 技术栈 / Tech Stack / 技術スタック
 
-- **Frontend / 前端 / フロントエンド:** React + Vite + TypeScript + Tailwind CSS + shadcn/ui
-- **Backend / 后端 / バックエンド:** Express + TypeScript
+- **Frontend:** React + Vite + TypeScript + Tailwind CSS + shadcn/ui
+- **Backend:** Express + TypeScript
 - **AI:** OpenAI GPT-4.1-mini
-- **Package Manager:** pnpm (monorepo)
-- **API Spec:** OpenAPI 3.0 + Orval codegen
+- **Package Manager:** pnpm (monorepo) + Orval codegen
 - **Export:** html-to-image (PNG), Markdown
 
 ---
 
-## 📁 项目结构 / Project Structure / プロジェクト構成
+## 📁 项目结构 / Project Structure
 
 ```
 ├── artifacts/
-│   ├── api-server/        # Express API server / API サーバー
-│   └── game-planner/      # React frontend / フロントエンド
+│   ├── api-server/        # Express API server
+│   └── game-planner/      # React frontend
 ├── lib/
 │   ├── api-spec/          # OpenAPI spec + codegen config
 │   ├── api-client-react/  # Generated React Query hooks
@@ -90,6 +80,6 @@ Frontend runs at `http://localhost:5173`, API server at `http://localhost:3000`.
 
 ---
 
-## 📄 许可证 / License / ライセンス
+## 📄 License
 
 MIT
