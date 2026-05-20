@@ -1,4 +1,4 @@
-# 游戏企划生成器 / Game Plan Generator / ゲーム企画ジェネレーター
+# 游戏企划生成器 / Game Plan Generator
 
 > 输入一句游戏点子，AI 自动生成完整企划书、任务清单与开发计划。  
 > Enter a game idea, and AI instantly generates a full design doc, task list & dev plan.  
