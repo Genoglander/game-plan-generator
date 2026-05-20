@@ -21,13 +21,19 @@
 
 ## 🚀 快速开始 / Quick Start / クイックスタート
 
-**需要 / Required:** Node.js 18+、pnpm、OpenAI API Key
+**需要 / Required:** 
+```
+Node.js 18+
+pnpm 8+
+OpenAI API Key
+```
 
 ### 1. 克隆并安装 / Clone & Install
 
 ```bash
 git clone https://github.com/Genoglander/game-plan-generator.git
-cd game-plan-generator
+```
+```
 pnpm install
 ```
 
@@ -41,14 +47,10 @@ OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxx
 
 ### 3. 启动 / Start
 
-分别在两个终端运行 / Run in two separate terminals:
+在终端运行 / Run in terminal:
 
 ```bash
-# 终端 1 — 后端 API
-pnpm --filter @workspace/api-server run dev
-
-# 终端 2 — 前端
-pnpm --filter @workspace/game-planner run dev
+pnpm run dev
 ```
 
 浏览器打开 → **http://localhost:5173**
@@ -81,5 +83,4 @@ pnpm --filter @workspace/game-planner run dev
 ---
 
 ## 📄 License
-
 MIT
